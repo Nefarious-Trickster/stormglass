@@ -8785,8 +8785,8 @@ const UI = {
     $('btn-create').disabled = !on; $('btn-join').disabled = !on;
     if (this.said && now() - this.said < 6) return;
     $('netstate').textContent = Net.status === 'checking' ? 'Connecting…'
-      : on ? (Net.mode === 'p2p' ? 'Host a match, then send your friend this page\'s link and the code. No sign-in needed.' : 'Host a match, then send your friend this page and the code.')
-        : 'Online play is off in this view. It needs a signed-in person who has been given this page. Skirmish always works.';
+      : on ? (Net.mode === 'p2p' ? 'Host a match, then send your friend this page\'s link and the code. No sign-in needed.' : 'Host a match, then send your friend this page and the code. Friend without Claude? Play together at nefarious-trickster.github.io/stormglass instead.')
+        : 'Online play is off in this view. Play online with no sign-in at nefarious-trickster.github.io/stormglass. Skirmish always works.';
   },
   openList() {
     const el = $('openlist'); el.textContent = '';
